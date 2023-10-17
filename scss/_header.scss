@@ -1,0 +1,33 @@
+  /* HEADER */
+  .navbar {
+    background-color: #232D3F !important;
+    
+    .dropdown-item{
+        background-color: #232D3F;
+    }
+    
+    .navbar-brand {
+      color: #fff;
+      
+      &:hover {
+        color: white !important;
+      }
+    }
+    
+    .nav-link, .dropdown-item {
+      color: #fff !important;
+      
+      &:hover {
+        color: #0fe06a !important;
+      }
+    }
+    
+    .navbar-toggler {
+      border: none;
+    }
+    
+    .dropdown-menu {
+      background-color: #232D3F !important;
+    }
+  }
+  

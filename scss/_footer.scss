@@ -1,0 +1,20 @@
+  /* FOOTER */
+  .foot {
+    position: absolute;
+    background-color: #040D12;
+    width: 100%;
+    
+  }footer{
+    a{
+      font-size: 30px;
+      display: inline-flex;
+      padding: 15px;
+      padding: 2%;
+      text-decoration: none;
+      color: white;
+      
+      &:hover {
+        color:  #0fe06a;
+      }
+    }
+  }
