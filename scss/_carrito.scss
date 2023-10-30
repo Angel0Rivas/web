@@ -1,7 +1,11 @@
   /* Carrito */
-  .compras {
-    background-color: #e4e2e2;
-    border-radius: 5px;
-    padding: 10px;
-    height: 120px;
+  section{
+    flex-direction: column;
+    
+    .compras {
+      background-color: #e4e2e2;
+      border-radius: 5px;
+      padding: 10px;
+      height: 120px;
+    }
   }

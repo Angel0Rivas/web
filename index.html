@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coolzam es una tienda de computadoras, componentes y periféricos. Ofrece una amplia variedad de productos de calidad y las últimas novedades del mercado. Es el lugar ideal para satisfacer todas tus necesidades tecnológicas.">
+    <meta name="keywords" content="Pc Gamers, intel, nvidia, razer, logitech">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e1304009cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/C Azul Logo.png">
     <title>Coolzam</title>
 </head>
 <body>
@@ -40,8 +44,8 @@
                         <i class="fa-solid fa-user"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Inicia Sesión</a></li>
-                      <li><a class="dropdown-item" href="#">Registrate</a></li>
+                      <li><a class="dropdown-item" href="pages/login.html">Inicia Sesión</a></li>
+                      <li><a class="dropdown-item" href="pages/register.html">Registrate</a></li>
                     </ul>
               </li>
             </ul>
@@ -76,63 +80,185 @@
             </button>
           </div>
          <!-- PRODUCTO MAS VENDIDO -->
-         <div class="cards mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/amdRyzen7.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><b>EL PRODUCTO MÁS VENDIDO</b></h5>
-                <p class="card-text">El procesador Ryzen 7 se ha establecido como una opción líder en el mercado de CPUs de alto rendimiento. Con su arquitectura innovadora y potencia de procesamiento excepcional, el Ryzen 7 ofrece una experiencia informática sin precedentes. Equipado con múltiples núcleos y tecnología de multihilo, este procesador brinda un rendimiento excepcional en tareas intensivas, como la edición de video, la renderización 3D y el gaming de alta gama. Además, la eficiencia energética del Ryzen 7 lo convierte en una elección ideal para aquellos preocupados por el consumo de energía. Ya sea que seas un entusiasta de los videojuegos o un profesional creativo, el Ryzen 7 te ofrece una capacidad de respuesta inigualable y una multitarea fluida. En resumen, el Ryzen 7 es el aliado perfecto para aquellos que buscan un rendimiento excepcional y una experiencia informática de vanguardia.</p>
-              </div>
+
+       <!-- ARTICULOS -->
+       <h1 class="h3">
+           En Coolzam te ofrecemos los mejores productos
+       </h1>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+              <section class="row">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="p-2 g-col-6 col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/pc.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">U$S 600</h5>
+                        <p class="card-text">Computadora Cpu Gamer Ryzen 5 5600g 16gb Ram Ssd 512gb.</p>
+                        <p class="btn btn-success">Agregar al carrito</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/pc2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">U$S 1.800</h5>
+                        <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+                        <p class="btn btn-success">Agregar al carrito</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/pc.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">U$S 600</h5>
+                        <p class="card-text">Computadora Cpu Gamer Ryzen 5 5600g 16gb Ram Ssd 512gb.</p>
+                        <p class="btn btn-success">Agregar al carrito</p>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+             <div class="carousel-item ci2">
+               <div class="card">
+                 <div class="card-body">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/amd9.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/i9k.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img src="images/4090.jpg " class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">U$S 1.800</h5>
+                        <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+                        <p class="btn btn-success">Agregar al carrito</p>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <div class="card">
+                 <div class="card-body">
+                   <h5 class="card-title">Card 3</h5>
+                   <p class="card-text">This is the content of Card 3.</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <a class="carousel-control-prev" href="#mycarrousel" role="button" data-slide="prev">
+             <i class="fa-solid fa-chevron-left fs-1" style="color: #1f355c;"></i>
+           </a>
+           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+         <i class="fa-solid fa-chevron-right fs-1" style="color: #1f355c;"></i>
+           </a>
+         </div>
+         
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <div class="container">
+     <section class="row">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/pc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 600</h5>
+              <p class="card-text">Computadora Cpu Gamer Ryzen 5 5600g 16gb Ram Ssd 512gb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
             </div>
           </div>
         </div>
-       <!-- ARTICULOS -->
-       <h3 class="h3">
-           En Coolzam te ofrecemos los mejores productos
-       </h3>
-  <div class="container">
-     <section class="row">
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/pc.jpg" alt="PC Gamer">
-            <h3>Computadora Cpu Gamer Ryzen 5 5600g 16gb Ram Ssd 512gb</h3>
-            <p class="price">U$S 600</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/pc2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 1.800</h5>
+              <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
+            </div>
+          </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/4090.jpg" alt="PC Gamer">
-            <h3>Tarjeta Grafica Rtx 4090 24gb Msi Geforce Gaming Trio</h3>
-            <p class="price">U$S 2.200</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/amd9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/pc2.jpg" alt="PC Gamer">
-            <h3>Computadora Core I9 12900k / 32gb Ram / M.2 1tb</h3>
-            <p class="price">U$S 1.800</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/i9k.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/i9k.jpg" alt="PC Gamer">
-            <h3>Procesador I9 12900k Socket 1700 12va Generación</h3>
-            <p class="price">U$S 600</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/4090.jpg " class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 1.800</h5>
+              <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
+            </div>
+          </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/amd9.jpg" alt="PC Gamer">
-            <h3>Procesador Ryzen 9 5900x</h3>
-            <p class="price">U$S 500</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/pc2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 1.800</h5>
+              <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
+            </div>
+          </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 my-3">
-            <img src="images/razer.jpg" alt="PC Gamer">
-            <h3>Mouse Raton Razer Viper Ultimate Hyperspeed</h3>
-            <p class="price">U$S 100</p>
-            <a href="#" class="btn">Añadir al carrito</a>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/pc2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 1.800</h5>
+              <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
+            </div>
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/pc2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U$S 1.800</h5>
+              <p class="card-text">Computadora Core I9 12900k / 32gb Ram / M.2 1tb.</p>
+              <p class="btn btn-success">Agregar al carrito</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </div>
+  </div> -->
     </main>
     <footer class="foot">
         <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
