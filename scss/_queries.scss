@@ -1,0 +1,52 @@
+@media (max-width:1000px){
+    @if $index-page{
+        .ccd{
+          display: none; 
+        }
+        .h3{
+            display: none;
+        }
+        .envios{
+          display: none;
+        }
+    }
+  }
+  @media (min-width:1001px){
+    .qns{
+        display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .qns{
+    width: 80%;
+    font-size: 80%;
+  }
+}
+  @media (max-width: 480px) {
+    .qns{
+     width: 90%;
+    font-size: 70%;
+  }
+}
+@media (min-width: 990px){
+    .card{
+        img {
+        width: 90%;
+        object-fit: cover !important
+      }
+    }
+}
+@if $carrito-page{
+  .card{
+    width: 90%;
+    height: 500px;
+    .btn{
+      margin: auto;
+    }
+  }
+}
+@if $index-page{
+  .card{
+    margin:85px;
+  }
+}
