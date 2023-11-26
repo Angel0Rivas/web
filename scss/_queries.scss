@@ -1,3 +1,4 @@
+// QUERIE RESPONSIVE DE INDEX
 @media (max-width:1000px){
     @if $index-page{
         .ccd{
@@ -36,6 +37,7 @@
       }
     }
 }
+// CARRITO PAGE 
 @if $carrito-page{
   .card{
     width: 90%;
@@ -45,11 +47,13 @@
     }
   }
 }
+// INDEX PAGE
 @if $index-page{
   .card{
     margin:85px;
   }
 }
+// PAGINA DE COMPUTADORAS
 @if $computadores-page{
   h1{
     text-align: center;
