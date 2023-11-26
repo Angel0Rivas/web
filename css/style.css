@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* HEADER */
 .navbar {
   background-color: #232D3F !important;
@@ -30,7 +34,8 @@ a {
   color: #fff !important;
 }
 .navbar .nav-link:hover, .navbar .dropdown-item:hover {
-  color: #0fe06a !important;
+  background-color: #529E7E !important;
+  border-radius: 10px;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -68,13 +73,15 @@ section {
   margin-top: 10px;
 }
 .card .btn {
-  display: inline-block;
+  display: flex;
   background-color: #1b8a4b;
   color: #fff;
   text-decoration: none;
   border-radius: 3px;
-  margin-top: 10px;
-  margin: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
 }
 .card .btn p {
   font-size: 14px;
@@ -94,30 +101,52 @@ section {
 
 /* FOOTER */
 footer {
-  background-color: #040D12;
+  background-color: #232D3F;
   width: 100%;
+  padding: 2px;
 }
 footer a {
   font-size: 30px;
   display: inline-flex;
-  padding: 15px;
   padding: 2%;
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
 }
 footer a:hover {
-  color: #0fe06a;
+  color: #529E7E;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .social-icons a {
+  margin: 0 10px;
+}
+footer .contact-info {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 /* Carrito */
 section {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
-section .compras {
-  background-color: #e4e2e2;
+
+.compras {
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   height: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
 .qns {
@@ -153,10 +182,32 @@ section .compras {
   display: flex;
 }
 
-section form {
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .login {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .register {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 1000px) {
@@ -203,6 +254,17 @@ section form {
 
 .card {
   margin: 85px;
+}
+
+h1 {
+  text-align: center;
+  padding: 90px;
+}
+
+@media (min-width: 527px) {
+  .card {
+    width: 100vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

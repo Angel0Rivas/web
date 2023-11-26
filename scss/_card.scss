@@ -23,8 +23,7 @@
     img {
       width: 90% !important;
       height: 60%;
-      // object-fit: cover !important;
-      // border-radius: 5px;
+
     }
     
     h3 {
@@ -33,13 +32,15 @@
     }
     
     .btn {
-      display: inline-block;
+      display: flex;
       background-color: #1b8a4b;
       color: #fff;
       text-decoration: none;
       border-radius: 3px;
-      margin-top: 10px;
-      margin: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: flex-start;
       
     p {
       font-size: 14px;

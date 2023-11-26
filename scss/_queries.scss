@@ -50,3 +50,16 @@
     margin:85px;
   }
 }
+@if $computadores-page{
+  h1{
+    text-align: center;
+    padding: 90px;
+  }
+}
+@media (min-width: 527px){
+  @if $computadores-page{
+    .card{
+      width: 100vh;
+    }
+  }
+}
